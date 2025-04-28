@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% block title %} Kontakt {% endblock %}
+{% block styles %} <link href={{url_for('static', filename='css/contact.css')}} rel="stylesheet"> {% endblock %}
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 mb-4 fw-bold">Skontaktuj się z nami</h1>
+            <p class="lead">Jesteśmy gotowi odpowiedzieć na Twoje pytania i pomóc w realizacji Twoich projektów</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div class="row">
+            <!-- Formularz kontaktowy -->
+            <div class="col-lg-8 mb-4">
+                <div class="contact-section">
+                    <h2 class="mb-4">Wyślij wiadomość</h2>
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                    <div class="alert-container mb-4">
+                        {% for category, message in messages %}
+                        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    {% endwith %}
+                    <form action="/kontakt/" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="name" placeholder="Imię i nazwisko" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" name="email" placeholder="Adres email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Wybierz lokalizację:</label>
+                            <div class="d-flex gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="location" id="warsaw" value="Warszawa" checked>
+                                    <label class="form-check-label" for="warsaw">
+                                        Warszawa
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="location" id="bialystok" value="Bialystok">
+                                    <label class="form-check-label" for="bialystok">
+                                        Białystok
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" name="subject" placeholder="Temat">
+                        <textarea class="form-control" rows="5" name="message" placeholder="Twoja wiadomość" required></textarea>
+                        <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Informacje kontaktowe -->
+            <div class="col-lg-4 mb-4">
+                <div class="contact-info">
+                    <h3><i class="bi bi-geo-alt"></i> Warszawa</h3>
+                    <p>ENST Spółka Akcyjna<br>
+                    02-495 Warszawa<br>
+                    ul. Dzieci Warszawy 5</p>
+
+                    <h3><i class="bi bi-geo-alt"></i> Białystok</h3>
+                    <p>ENST Spółka Akcyjna<br>
+                    15-001 Białystok<br>
+                    ul. Elektryczna 2</p>
+
+                    <h3><i class="bi bi-telephone"></i> Telefon</h3>
+                    <p>Warszawa: 22 378 16 90<br>
+                    Białystok: 85 744 22 33<br>
+                    fax: 22 378 16 91</p>
+
+                    <h3><i class="bi bi-envelope"></i> Email</h3>
+                    <p>biuro@enst.pl</p>
+
+                    <h3><i class="bi bi-clock"></i> Godziny otwarcia</h3>
+                    <p>Poniedziałek - Piątek<br>
+                    8:00 - 16:00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mapy -->
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+                <h3 class="text-center mb-3">Lokalizacja Warszawa</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.6500000000005!2d20.883844!3d52.196743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471933f0b6c6b7d7%3A0x8c8b8c8b8c8b8c8b!2sDzieci%20Warszawy%205%2C%2002-495%20Warszawa!5e0!3m2!1spl!2spl!4v1681234567890" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h3 class="text-center mb-3">Lokalizacja Białystok</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2419.0000000000005!2d23.150000!3d53.133333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc7c8c8c8c8b%3A0x8c8b8c8b8c8b8c8b!2sPrz%C4%99dzalniana%2060%2C%2015-688%20Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1681234567890" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
+</body>
+</html> 

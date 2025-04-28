@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% block title %} Oferta {% endblock %}
+{% block styles %} <link href="{{url_for('static', filename='css/offer.css')}}" rel='stylesheet'> {% endblock %}
+{% block content %} 
+<!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container fade-in">
+            <h1 class="display-4 mb-4 fw-bold">Oferta</h1>
+            <p class="lead">Poznaj zakres naszych usług</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div id='acordion1'>
+            <!-- Teletechnika -->
+                <div class="section slide-in-left">
+                    <div class="section-header not-collapsed" data-bs-toggle="collapse" data-bs-target="#teletechnika">
+                        <h2 class="mb-0"><i class="bi bi-broadcast me-2"></i>Teletechnika</h2>
+                        <i class="bi bi-chevron-down collapse-icon"></i>
+                    </div>
+                    <div class="collapse show section-content" id="teletechnika" data-bs-parent="#acordion1">
+                        <p>Podstawowym przedmiotem działalności spółki ENST jest projektowanie oraz kompleksowa realizacja szeroko pojętych zagadnień z zakresu teletechniki i telekomunikacji, automatyki i informatyki oraz systemów bezpieczeństwa. Potencjał i doświadczenie pracowników oraz wiedza techniczna sprawia, iż spółka jest wstanie realizować największe wyzwania techniczne.</p>
+                        <h4>Nasza specjalizacja obejmuje min.:</h4>
+                        <ul>
+                            <li>Instalacje strukturalnych sieci LAN oraz instalacje sieci zasila gwarantowanego wraz z urządzeniami UPS.</li>
+                            <li>Systemy łączności – telefonia analogowa, telefonia IP wraz z infrastrukturą oraz rozwiązania bezprzewodowe konwencjonalne i w wykonaniu Ex.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Systemy Techniczne Ochrony -->
+                <div class="section slide-in-left">
+                    <div class="section-header collapsed" data-bs-toggle="collapse" data-bs-target="#systemyOchrony">
+                        <h2 class="mb-0"><i class="bi bi-shield-lock-fill me-2"></i>Systemy techniczne ochrony</h2>
+                        <i class="bi bi-chevron-down collapse-icon"></i>
+                    </div>
+                    <div class="collapse section-content" id="systemyOchrony" data-bs-parent="#acordion1">
+                        <p>Podstawowym przedmiotem działalności spółki ENST jest projektowanie oraz kompleksowa realizacja szeroko pojętych zagadnień z zakresu teletechniki i telekomunikacji, automatyki i informatyki oraz systemów bezpieczeństwa. Potencjał i doświadczenie pracowników oraz wiedza techniczna sprawia, iż spółka jest wstanie realizować największe wyzwania techniczne.</p>
+                        <h4>Nasza specjalizacja obejmuje min.:</h4>
+                        <ul>
+                            <li>Projektowanie, wykonawstwo i eksploatacja zintegrowanych technicznych systemów ochrony obiektów (SKD, CCTV, SSWN, P.Poż).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Automatyka Przemysłowa -->
+                <div class="section slide-in-left">
+                    <div class="section-header collapsed" data-bs-toggle="collapse" data-bs-target="#automatyka">
+                        <h2 class="mb-0"><i class="bi bi-gear-fill me-2"></i>Automatyka przemysłowa</h2>
+                        <i class="bi bi-chevron-down collapse-icon"></i>
+                    </div>
+                    <div class="collapse section-content" id="automatyka" data-bs-parent="#acordion1">
+                        <p>Podstawowym przedmiotem działalności spółki ENST jest projektowanie oraz kompleksowa realizacja szeroko pojętych zagadnień z zakresu teletechniki i telekomunikacji, automatyki i informatyki oraz systemów bezpieczeństwa. Potencjał i doświadczenie pracowników oraz wiedza techniczna sprawia, iż spółka jest wstanie realizować największe wyzwania techniczne.</p>
+                        <h4>Nasza specjalizacja obejmuje min.:</h4>
+                        <ul>
+                            <li>Automatyka systemów HVAC.</li>
+                            <li>Automatyka budynków inteligentnych – doradztwo, projektowanie, wykonawstwo uruchomienia, dostawa urządzeń.</li>
+                            <li>Dostawami urządzeń automatyki, w tym sterowników, oprogramowania itp.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sieci i Instalacje -->
+                <div class="section slide-in-left">
+                    <div class="section-header collapsed" data-bs-toggle="collapse" data-bs-target="#sieci">
+                        <h2 class="mb-0"><i class="bi bi-diagram-3-fill me-2"></i>Sieci i instalacje</h2>
+                        <i class="bi bi-chevron-down collapse-icon"></i>
+                    </div>
+                    <div class="collapse section-content" id="sieci" data-bs-parent="#acordion1">
+                        <p>Podstawowym przedmiotem działalności spółki ENST jest projektowanie oraz kompleksowa realizacja szeroko pojętych zagadnień z zakresu teletechniki i telekomunikacji, automatyki i informatyki oraz systemów bezpieczeństwa. Potencjał i doświadczenie pracowników oraz wiedza techniczna sprawia, iż spółka jest wstanie realizować największe wyzwania techniczne.</p>
+                        <h4>Nasza specjalizacja obejmuje min.:</h4>
+                        <ul>
+                            <li>Projektowanie, montaż i uruchomienie instalacji elektrycznych.</li>
+                            <li>Instalacje sanitarne (HVAC) - doradztwo, projektowanie, wykonawstwo uruchomienia, dostawa urządzeń.</li>
+                            <li>Roboty ogólnobudowlane.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Systemy Sterowania -->
+                <div class="section slide-in-left">
+                    <div class="section-header collapsed" data-bs-toggle="collapse" data-bs-target="#sterowanie">
+                        <h2 class="mb-0"><i class="bi bi-sliders me-2"></i>Systemy sterowania</h2>
+                        <i class="bi bi-chevron-down collapse-icon"></i>
+                    </div>
+                    <div class="collapse section-content" id="sterowanie" data-bs-parent="#acordion1">
+                        <p>Podstawowym przedmiotem działalności spółki ENST jest projektowanie oraz kompleksowa realizacja szeroko pojętych zagadnień z zakresu teletechniki i telekomunikacji, automatyki i informatyki oraz systemów bezpieczeństwa. Potencjał i doświadczenie pracowników oraz wiedza techniczna sprawia, iż spółka jest wstanie realizować największe wyzwania techniczne.</p>
+                        <h4>Nasza specjalizacja obejmuje min.:</h4>
+                        <ul>
+                            <li>Opomiarowanie i sterowanie armaturą technologiczną w oparciu sterowniki PLC.</li>
+                            <li>Systemy zarządzania budynkami.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Serwis i Konserwacje -->
+            <div class="section slide-in-left">
+                <div class="section-header collapsed" data-bs-toggle="collapse" data-bs-target="#serwis">
+                    <h2 class="mb-0"><i class="bi bi-tools me-2"></i>Serwis i konserwacje</h2>
+                    <i class="bi bi-chevron-down collapse-icon"></i>
+                </div>
+                <div class="collapse section-content" id="serwis" data-bs-parent="#acordion1">
+                    <p>Podstawowym przedmiotem działalności spółki ENST jest projektowanie oraz kompleksowa realizacja szeroko pojętych zagadnień z zakresu teletechniki i telekomunikacji, automatyki i informatyki oraz systemów bezpieczeństwa. Potencjał i doświadczenie pracowników oraz wiedza techniczna sprawia, iż spółka jest wstanie realizować największe wyzwania techniczne.</p>
+                    <p>Spółka dysponuje doświadczoną kadrą inżynierów i techników. Ich umiejętności i wiedza wykorzystywane są również w ramach prowadzonych kompleksowych usług gwarancyjnych i pogwarancyjnych w zakresie konserwacji, serwisu urządzeń i systemów przy wykorzystaniu nowoczesnych urządzeń kontrolno-pomiarowych.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section mt-5 text-center" style="position: relative; padding: 3rem; border-radius: 15px; background: #f8f9fa; color: #333; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); transform: scale(0.95)">
+            <!-- Dekoracyjne elementy -->
+            <div class="animated-circle" style="position: absolute; top: -50px; left: -50px; width: 150px; height: 150px; background: rgba(0, 0, 0, 0.05); border-radius: 50%; z-index: 0; animation: moveCircle1 6s infinite ease-in-out;"></div>
+            <div class="animated-circle" style="position: absolute; bottom: -50px; right: -50px; width: 200px; height: 200px; background: rgba(0, 0, 0, 0.05); border-radius: 50%; z-index: 0; animation: moveCircle2 8s infinite ease-in-out;"></div>
+
+            <!-- Treść CTA -->
+            <div class='fade-in' style="position: relative; z-index: 1;">
+                <h2 class="mb-4" style="font-size: 2.5rem; font-weight: bold; color: #212529;">
+                    Masz pytania? Skontaktuj się z nami!
+                </h2>
+                <p class="lead mb-4" style="font-size: 1.3rem; line-height: 1.8; color: #495057;">
+                    Jesteśmy tutaj, aby odpowiedzieć na wszystkie Twoje pytania i pomóc w wyborze najlepszych rozwiązań dla Twojej firmy.
+                </p>
+                <a href="/kontakt/" class="btn btn-gradient btn-lg px-5 py-3" style="font-size: 1.3rem; font-weight: bold; border-radius: 50px;">
+                    Wyślij wiadomość
+                </a>
+            </div>
+        </div>
+    </main>
+
+ 
+
+    <script>
+
+        // Obsługa ikon strzałek
+        document.querySelectorAll('.section-header').forEach(header => {
+            header.addEventListener('click', function() {
+                this.classList.toggle('collapsed');
+                this.classList.toggle('not-collapsed');
+            });
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,152 @@
+:root {
+    --navy-blue: #1e3a8a;
+    --grass-green: #09b649;
+    --light-navy: #3b82f6;
+}
+/* Navbar Styles */
+.navbar {
+    /* background-color: transparent; */
+    /* backdrop-filter: blur(10px); */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    backdrop-filter: blur(10px);
+    background-color: #1e3b8ad2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: var(--grass-green);
+}
+
+.nav-link {
+    color: white;
+    transition: color 0.3s ease;
+    max-width: max-content;
+}
+
+.nav-link:hover {
+    color: var(--grass-green);
+}
+
+
+.nav-link.active {
+    color: var(--grass-green);
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--navy-blue);
+    color: white;
+    padding: 3rem 0;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--grass-green);
+    text-decoration: underline;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: var(--grass-green);
+    transform: scale(1.2);
+}
+
+footer .list-unstyled li i {
+    color: var(--grass-green);
+    margin-right: 10px;
+}
+.text-white-50{
+    color: rgb(226, 226, 226) !important;
+}
+.iconsfot{
+    color: var(--grass-green) !important;
+
+}
+
+.nav-link {
+    color: white;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--grass-green); /* Kolor podkreślenia */
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--grass-green); /* Zmiana koloru tekstu */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Animacja podkreślenia */
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.btn-light{
+    background-color: white !important;
+}
+.btn-light:hover{
+    opacity:0.8
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out !important;
+}
+
+.slide-in-left.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-bottom {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-bottom.show {
+    opacity: 1;
+    transform: translateY(0);
+}

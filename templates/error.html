@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Błąd {{ error_code }}</title>
+    <link href="{{ url_for('static', filename='css/base.css') }}" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .error-code {
+            font-size: 6rem;
+            font-weight: bold;
+            color: var(--navy-blue);
+        }
+        .error-message {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .btn-home {
+            background-color: var(--grass-green);
+            color: white;
+            font-size: 1.2rem;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-home:hover {
+            background-color: #07a94b;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">{{ error_code }}</div>
+        <div class="error-message">{{ error_message }}</div>
+        <p class="text-muted">Spróbuj ponownie za chwilę. Jeśli problem będzie się powtarzał, skontaktuj się z nami.</p>
+        <a href="/" class="btn btn-home">Powrót na stronę główną</a>
+    </div>
+</body>
+</html>

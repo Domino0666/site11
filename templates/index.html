@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block title %} Strona główna {% endblock %}
+{% block styles %}
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="hero" class="hero text-center">
+    <div class="container">
+        <h1 class="display-4 mb-4 fw-bold fade-in">Innowacyjne Rozwiązania Energetyczne</h1>
+        <p class="lead mb-4 fade-in">Kompleksowe usługi w zakresie teletechniki, telekomunikacji i systemów bezpieczeństwa</p>
+        <a href="#oferta" class="btn btn-light btn-lg fade-in">Poznaj naszą ofertę</a>
+    </div>
+</section>
+
+<!-- Main Content -->
+<main class="container py-5">
+    <!-- O Nas Section -->
+    <section id="o-nas" class="section bg-light p-lg-5 p-3 mb-5">
+        <div class="row align-items-center slide-in-left">
+            <div class="col-lg-6">
+                <h2 class="mb-4">O Firmie</h2>
+                <p class="lead">Spółka ENST to zespół doświadczonych inżynierów i techników, którzy realizują kompleksowe usługi gwarancyjne i pogwarancyjne.</p>
+                <p>Wykorzystujemy nowoczesne urządzenia kontrolno-pomiarowe do zapewnienia najwyższej jakości naszych usług.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasze atuty</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><span id="green">✓</span> Doświadczona kadra inżynierska</li>
+                            <li class="mb-3"><span id="green">✓</span> Nowoczesny sprzęt pomiarowy</li>
+                            <li class="mb-3"><span id="green">✓</span> Kompleksowa obsługa</li>
+                            <li class="mb-3"><span id="green">✓</span> Profesjonalne podejście</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="/about/" class="btn btn-success mt-3 mb-5">Czytaj więcej</a>
+    </section>
+
+    <!-- Oferta Section -->
+    <section id="oferta" class="section bg-light p-5">
+        <h2 class="text-center mb-5 slide-in-bottom">Nasza Oferta</h2>
+        <div class="row g-4 mb-4">
+            <div class="col-md-4 fade-in">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Teletechnika i Telekomunikacja</h5>
+                        <p class="card-text">Kompleksowe rozwiązania w zakresie systemów teletechnicznych i telekomunikacyjnych.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fade-in">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Automatyka i Informatyka</h5>
+                        <p class="card-text">Zaawansowane systemy automatyki i rozwiązań informatycznych.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fade-in">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Systemy Bezpieczeństwa</h5>
+                        <p class="card-text">Kompleksowe rozwiązania z zakresu bezpieczeństwa i monitoringu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="/oferta/" class="btn btn-success btn-lg fade-in">Czytaj więcej</a>
+        </div>
+    </section>
+</main>
+{% endblock %}

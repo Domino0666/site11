@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% block title %} O Firmie {% endblock %}
+{% block styles %} <link href={{url_for('static', filename='css/about.css')}} rel="stylesheet"> {% endblock %}
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container fade-in">
+            <h1 class="display-4 mb-4 fw-bold">O Firmie</h1>
+            <p class="lead">Poznaj tajniki naszej pracy</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <!-- Informacje ogólne -->
+        <div id="accordionExample">
+            <!-- Informacje ogólne -->
+            <div class="section slide-in-left">
+                <div class="section-header" data-bs-toggle="collapse" data-bs-target="#infoOgolne">
+                    <h2 class="mb-0"><i class="bi bi-info-circle-fill me-2"></i>Informacje ogólne</h2>
+                    <i class="bi bi-chevron-down collapse-icon"></i>
+                </div>
+                <div class="collapse show section-content" id="infoOgolne" data-bs-parent="#accordionExample">
+                    <p class="lead">Podstawowym przedmiotem działalności spółki ENST jest projektowanie oraz kompleksowa realizacja szeroko pojętych zagadnień z zakresu teletechniki i telekomunikacji, automatyki i informatyki oraz systemów bezpieczeństwa.</p>
+                    <p>Potencjał i doświadczenie pracowników oraz wiedza techniczna sprawia, iż spółka jest wstanie realizować największe wyzwania techniczne.</p>
+                    <p>Spółka dysponuje doświadczoną kadrą inżynierów i techników. Ich umiejętności i wiedza wykorzystywane są również w ramach prowadzonych kompleksowych usług gwarancyjnych i pogwarancyjnych w zakresie konserwacji, serwisu urządzeń i systemów przy wykorzystaniu nowoczesnych urządzeń kontrolno-pomiarowych.</p>
+                </div>
+            </div>
+        
+            <!-- Dane spółki -->
+            <div class="section slide-in-left">
+                <div class="section-header collapsed" data-bs-toggle="collapse" data-bs-target="#daneSpolki">
+                    <h2 class="mb-0"><i class="bi bi-building-fill me-2"></i>Dane spółki</h2>
+                    <i class="bi bi-chevron-down collapse-icon"></i>
+                </div>
+                <div class="collapse section-content" id="daneSpolki" data-bs-parent="#accordionExample">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Siedziba główna</h4>
+                            <p>ENST Spółka Akcyjna<br>
+                            02-495 Warszawa<br>
+                            ul. Dzieci Warszawy 5<br>
+                            tel. 22 378 16 90, fax 22 378 16 91</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Oddział w Białymstoku</h4>
+                            <p>15-688 Białystok<br>
+                            ul. Przędzalniana 60<br>
+                            tel. 85 662 97 00, fax 85 662 97 10</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p>NIP: 5213595818<br>
+                        REGON: 142825673<br>
+                        KRS: 0000379616<br>
+                        Kapitał zakładowy: 100 000,00 PLN opłacony w całości<br>
+                        Alior Bank: 04 2490 0005 0000 4530 7593 1901</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Uprawnienia -->
+            <div class="section slide-in-left">
+                <div class="section-header collapsed" data-bs-toggle="collapse" data-bs-target="#uprawnienia">
+                    <h2 class="mb-0"><i class="bi bi-shield-lock-fill me-2"></i>Posiadane uprawnienia</h2>
+                    <i class="bi bi-chevron-down collapse-icon"></i>
+                </div>
+                <div class="collapse section-content" id="uprawnienia" data-bs-parent="#accordionExample">
+                    <p>Spółka dysponuje wysoko wykwalifikowanymi specjalistami posiadającymi uprawnienia:</p>
+                    <ul>
+                        <li>uprawnienia budowlane w zakresie projektowania i kierowania robotami w branżach:
+                            <ul>
+                                <li>konstrukcyjno-budowlana</li>
+                                <li>elektryczna i Elektroenergetyczna</li>
+                                <li>telekomunikacyjna</li>
+                                <li>sanitarna</li>
+                            </ul>
+                        </li>
+                        <li>licencje zabezpieczenia technicznego II stopnia</li>
+                        <li>świadectwa kwalifikacyjne uprawniające do zajmowania się eksploatacją urządzeń, instalacji i sieci na stanowisku dozoru i eksploatacji</li>
+                        <li>szkolenia i certyfikaty w zakresie stosowanych urządzeń i systemów</li>
+                    </ul>
+                    <p>Enst S.A. posiada również koncesję Ministerstwa Spraw Wewnętrznych na prowadzenie działalności gospodarczej w zakresie usług ochrony osób i mienia w formie zabezpieczenia technicznego obiektów</p>
+                </div>
+            </div>
+        
+            <!-- Kariera -->
+            <div class="section slide-in-left">
+                <div class="section-header collapsed" data-bs-toggle="collapse" data-bs-target="#kariera">
+                    <h2 class="mb-0"><i class="bi bi-briefcase-fill me-2"></i> Kariera</h2>
+                    <i class="bi bi-chevron-down collapse-icon"></i>
+                </div>
+                <div class="collapse section-content" id="kariera" data-bs-parent="#accordionExample">
+                    <p>Działalność spółki wymaga rzeszy wykwalifikowanych pracowników. Siłą naszej firmy są ludzie – to dzięki nim jesteśmy w stanie sprostać najwyższym wymaganiom naszych klientów. Praca w naszym zespole daje możliwość ciągłego rozwoju poprzez profesjonalne szkolenia i pojawiające się wciąż nowe wyzwania.</p>
+                    
+                    <h4 class="mt-4">Jeżeli:</h4>
+                    <ul>
+                        <li>jesteś osobą pracowitą</li>
+                        <li>cechuje Cię zaangażowanie oraz chęć osiągania coraz to nowych celów</li>
+                        <li>dobrze współpracujesz w zespole</li>
+                        <li>nie boisz się nowych wyzwań</li>
+                        <li>interesuje Cię tematyka, którą zajmuje się nasza firma</li>
+                    </ul>
+                    <p>To zachęcamy Cię do przesłania swojej aplikacji na adres <a href="mailto:biuro@enst.pl">biuro@enst.pl</a></p>
+                </div>
+            </div>
+        
+            <!-- Komunikacja z Akcjonariuszami -->
+            <div class="section slide-in-left">
+                <div class="section-header collapsed" data-bs-toggle="collapse" data-bs-target="#akcjonariusze">
+                    <h2 class="mb-0"><i class="bi-chat-dots-fill me-2"></i>Komunikacja z Akcjonariuszami</h2>
+                    <i class="bi bi-chevron-down collapse-icon"></i>
+                </div>
+                <div class="collapse section-content" id="akcjonariusze" data-bs-parent="#accordionExample">
+                    <h4>WEZWANIE DO ZŁOŻENIA DOKUMENTÓW AKCJI</h4>
+                    <p>Zarząd Spółki pod firmą ENST S.A. z siedzibą w Warszawie (dalej "Spółka") w związku z art. 16 ustawy z dnia 30 sierpnia 2019 roku o zmianie ustawy – Kodeks spółek handlowych oraz niektórych innych ustaw (Dz.U. z 2019 r. poz. 1798) wzywa wszystkich akcjonariuszy Spółki do złożenia posiadanych dokumentów akcji w celu ich dematerializacji.</p>
+                    <p>Dokumenty akcji należy składać w siedzibie Spółki tj. ul. Dzieci Warszawy 5 02-495, w dniach roboczych (od poniedziałku do piątku) w godzinach 9:00– 15:00.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section mt-5 text-center" style="position: relative; padding: 3rem; border-radius: 15px; background: #f8f9fa; color: #333; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); transform: scale(0.95)">
+            <!-- Dekoracyjne elementy -->
+            <div class="animated-circle" style="position: absolute; top: -50px; left: -50px; width: 150px; height: 150px; background: rgba(0, 0, 0, 0.05); border-radius: 50%; z-index: 0; animation: moveCircle1 6s infinite ease-in-out;"></div>
+            <div class="animated-circle" style="position: absolute; bottom: -50px; right: -50px; width: 200px; height: 200px; background: rgba(0, 0, 0, 0.05); border-radius: 50%; z-index: 0; animation: moveCircle2 8s infinite ease-in-out;"></div>
+
+            <!-- Treść CTA -->
+            <div class='fade-in' style="position: relative; z-index: 1;">
+                <h2 class="mb-4" style="font-size: 2.5rem; font-weight: bold; color: #212529;">
+                    Masz pytania? Skontaktuj się z nami!
+                </h2>
+                <p class="lead mb-4" style="font-size: 1.3rem; line-height: 1.8; color: #495057;">
+                    Jesteśmy tutaj, aby odpowiedzieć na wszystkie Twoje pytania i pomóc w wyborze najlepszych rozwiązań dla Twojej firmy.
+                </p>
+                <a href="/kontakt/" class="btn btn-gradient btn-lg px-5 py-3" style="font-size: 1.3rem; font-weight: bold; border-radius: 50px;">
+                    Wyślij wiadomość
+                </a>
+            </div>
+        </div>
+
+    </main>
+    
+
+    <script>
+        // Obsługa ikon strzałek
+        document.querySelectorAll('.section-header').forEach(header => {
+            header.addEventListener('click', function() {
+                this.classList.toggle('collapsed');
+                this.classList.toggle('not-collapsed');
+            });
+        });
+    </script>
+{% endblock %}
+
+
+
+

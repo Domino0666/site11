@@ -1,0 +1,110 @@
+
+
+.hero {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.9)), url('https://v.wpimg.pl/MjAzYzRjYgsgGC9JfRFvHmNAexM7SGFINFhjWH1bf1JxAnYcOwYoGCQKNlQ1GDgaIA0pVCIGYgsxE3YMY0UpAzIKNRsrRSgHIx89VWZTfF9zH2xIf1ssW3hXbR5lW2BTI0lgVzQLe1hxSTpOMQ95U2MH');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 6rem 0;
+    position: relative;
+    margin-top: 0;
+    overflow:hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.1s ease-out;
+}
+
+.section {
+    padding: 3rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background-color: var(--navy-blue);
+    border-color: var(--navy-blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--light-navy);
+    border-color: var(--light-navy);
+}
+
+.text-highlight {
+    color: var(--grass-green);
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--navy-blue);
+    color: white;
+}
+
+
+#green {
+    color: var(--grass-green);
+}
+.bgenst{
+    letter-spacing:-2px;
+}
+.btn-outline-primary {
+    color: var(--navy-blue);
+    border-color: var(--navy-blue);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--navy-blue);
+    border-color: var(--navy-blue);
+    color: white;
+}
+
+.btn-outline-success {
+    color: var(--grass-green);
+    border-color: var(--grass-green);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--grass-green);
+    border-color: var(--grass-green);
+    color: white;
+}
+.text-white-50{
+    color: rgb(226, 226, 226) !important;
+}
+.bi{
+    color: var(--grass-green) !important;
+
+}
+
+/* .btn-light:hover{
+    background: transparent !important;
+    color:white;
+    transition: background 0.3s ease, color 0.3s ease;
+} */
